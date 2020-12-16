@@ -1,0 +1,25 @@
+// NOTE: importa library
+@import "_library.scss";
+@import "_navigation.scss";
+@import "_cap.scss";
+@import "_main.scss";
+@import "_portfolio.scss";
+@import "_social.scss";
+@import "_effect.scss";
+@import "_media-queries.scss";
+
+html,
+body {
+	@extend %u-no-padding;
+	@extend %u-no-margin;
+}
+
+body {
+	background-color: $cor2-cinza-esc;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* .social-img {
+	width: 50px;
+	margin-right: 10px;
+} */

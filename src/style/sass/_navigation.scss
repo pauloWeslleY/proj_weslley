@@ -1,0 +1,48 @@
+@import "_library.scss";
+
+/* Navigation  Style **************/
+.navigation {
+   background-color: $cor2-cinza-esc;
+   color: $cor4-branco;
+   height: 50px;
+
+   animation-name: navegacao;
+   animation-duration: 4s;
+}
+
+.navigation ul {
+   @extend %u-text-align-right;
+   list-style: none;
+   margin-top: 0;
+   padding-left: 0;
+   height: 50px;
+}
+
+.navigation li {
+   @extend %u-display-inline-block;
+   padding-left: 30px;
+   padding-right: 30px;
+   line-height: 50px;
+   font-size: 18px;
+   font-weight: 100;
+}
+
+.navigation a {
+   @extend %u-no-text-decoration;
+   color: $cor4-branco;
+}
+
+.navigation a:hover {
+   color: $cor1-azul;
+}
+
+.navigation li.threeline-icon {
+   @extend %u-display-none;
+}
+
+.navigation li.threeline-icon:hover {
+   color: $cor1-azul;
+   cursor: pointer;
+}
+/* End Style Navigation */
+

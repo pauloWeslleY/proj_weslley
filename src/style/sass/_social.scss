@@ -1,0 +1,36 @@
+@import "_library.scss";
+
+/* TODO: Rede Sociais *****/
+.link {
+   color: $cor1-azul;
+   @extend %u-bold;
+
+   &:active,
+   &:focus,
+   &:hover {
+      color: $cor-azul1;
+      transition: all .50s ease-in-out;
+      -moz-transition: all .50s ease-in-out;
+      -webkit-transition: all .50s ease-in-out;
+   }
+}
+
+.socialLinks a {
+   @extend %u-no-text-decoration;
+}
+
+.socialInst {
+   color: $cor-vermelho;
+}
+
+.socialLinkd {
+   color: $cor-azul1;
+}
+
+.socialFace {
+   color: $cor-azul2;
+}
+
+.socialGit {
+   color: $cor-cinza3;
+}
