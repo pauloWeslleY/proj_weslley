@@ -3,7 +3,7 @@
 	<div class="main">
 
 		<ul class="caminho">
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li>></li>
 			<li>Contato</li>
 		</ul>
@@ -38,12 +38,5 @@
 		</div>
 
 		<br><br>
-		<a class="back-link" href="index.html">&larr; Voltar ao início<a>
-
+		<a class="back-link" href="index.php">&larr; Voltar ao início<a>
 	</div>
-
-
-	<script src="src/js/index.js"></script>
-</body>
-
-</html>

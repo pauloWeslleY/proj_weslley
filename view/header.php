@@ -36,6 +36,9 @@
 	<meta property="og:title" content="Portfolio Online - Weslley de Lima Firmino" />
 	<meta property="og:image" content="http://www.weslleylimaweb.info/src/img/paulo-wes.jpg" />
 
+	<!-- SCRIPTS -->
+	<script src="src/js/index.js"></script>
+
 </head>
 
 	<header>
@@ -43,7 +46,7 @@
 		<div id="navigation" class="navigation">
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="trabalhos" title="Página de Trabalhos">Trabalhos</a></li>
+				<li><a href="trabalho" title="Página de Trabalhos">Trabalhos</a></li>
 				<li><a href="cv" title="Curriculo">CV</a></li>
 				<li><a href="contatos" title="Página de Contatos">Contatos</a></li>
 				<li id="threeline-icon" class="threeline-icon">&#9776;</li>

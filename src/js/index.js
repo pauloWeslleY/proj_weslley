@@ -3,7 +3,7 @@ let openN = document.getElementById("threeline-icon");
 
 openN.onclick = () => {
 
-	var x = document.getElementById("navigation");
+	const x = document.getElementById("navigation");
 
 	if (x.className === "navigation") {
 		x.className += " menujs";

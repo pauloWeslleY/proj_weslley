@@ -1,46 +1,9 @@
-<!DOCTYPE html>
-<html>
-
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
-	<!-- Riquered meta Tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, inital-scale=1.0">
-	<meta name="author" content="Weslley de Lima Firmino">
-	<meta name="keywords"
-		content="CV, portfolio, web developer, html, css, weslleywebdesign, Front-End, pauloWeslley, paulo-WeslleY">
-	<meta name="description" content="Work of Paulo Weslley de Lima Firmino">
-
-	<title>CV - Weslley Lima</title>
-
-	<!-- CSS Custom -->
-	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-	<link rel="stylesheet" href="src/style/css/index.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
-	<link rel="shortcut icon" href="src/img/favwes1.png">
-
-	<meta property="og:type" content="profile" />
-	<meta property="og:url" content="http://www.weslleywebdesign.ga" />
-	<meta property="og:title" content="Portfolio Online - Weslley de Lima Firmino" />
-	<meta property="og:image" content="http://www.weslleywebdesign.ga/src/img/paulo-wes.jpg" />
-
-</head>
-
-<body>
-
-	<div id="navigation" class="navigation">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="portfolio.html">Trabalhos</a></li>
-			<li><a href="cv.html">CV</a></li>
-			<li><a href="contato.html">Contato</a></li>
-			<li id="threeline-icon" class="threeline-icon">&#9776;</li>
-		</ul>
-	</div>
+<?php include_once("header.php");?>
 
 	<div class="main">
 
 		<ul class="caminho">
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li>></li>
 			<li>Currículo</li>
 		</ul>
@@ -142,10 +105,5 @@
 		<p>(+55) 11 95956-2790</p>
 
 
-		<a class="back-link" href="index.html">&larr; Voltar ao início</a>
+		<a class="back-link" href="index.php">&larr; Voltar ao início</a>
 	</div>
-
-	<script src="src/js/index.js"></script>
-</body>
-
-</html>

@@ -2,11 +2,10 @@
 
 	<div class="main">
 
-
 		<ul class="caminho">
 			<li><a href="index.php">Home</a></li>
 			<li>></li>
-			<li><a href="trabalhos">Trabalhos</a></li>
+			<li><a href="trabalho">Trabalhos</a></li>
 			<li>></li>
 			<li>Projeto - Midia</li>
 		</ul>
@@ -34,14 +33,5 @@
 
 		<br>
 
-		<a class="back-link" href="trabalhos">&larr; Voltar<a>
+		<a class="back-link" href="trabalho">&larr; Voltar<a>
 	</div>
-
-
-
-</body>
-
-</html>
-
-
-<?php include_once("footer.php");?>
