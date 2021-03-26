@@ -40,3 +40,5 @@
 		<br><br>
 		<a class="back-link" href="index.php">&larr; Voltar ao início<a>
 	</div>
+
+<?php include_once("footer.php");?>

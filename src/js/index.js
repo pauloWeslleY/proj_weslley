@@ -1,15 +1,16 @@
 /* HACK: Script Menujs */
-let openN = document.getElementById("threeline-icon");
 
-openN.onclick = () => {
+let openNav = document.getElementById("threeline-icon");
 
-	const x = document.getElementById("navigation");
+openNav.onclick = () => {
 
-	if (x.className === "navigation") {
-		x.className += " menujs";
+	const navbar = document.getElementById("navigation");
+
+	if (navbar.className === "navigation") {
+		navbar.className += " menujs";
 		document.getElementById("threeline-icon").innerHTML = "&Cross;";
 	} else {
-		x.className = "navigation";
+		navbar.className = "navigation";
 		document.getElementById("threeline-icon").innerHTML = "&#9776;";
 	}
 

@@ -36,9 +36,6 @@
 	<meta property="og:title" content="Portfolio Online - Weslley de Lima Firmino" />
 	<meta property="og:image" content="http://www.weslleylimaweb.info/src/img/paulo-wes.jpg" />
 
-	<!-- SCRIPTS -->
-	<script src="src/js/index.js"></script>
-
 </head>
 
 	<header>

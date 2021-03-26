@@ -30,3 +30,5 @@
 
 		<a class="back-link" href="trabalho">&larr; Voltar<a>
 	</div>
+
+<?php include_once("footer.php");?>
