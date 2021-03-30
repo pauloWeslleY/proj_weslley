@@ -22,9 +22,9 @@
 
 		<img class="foto-trabalhos" src="src/img/trabalhos/onepage2.jpg" alt="Site PontoCom">
 
-		<p>O site pode ser visto em <a class="link" href="https://www.webpontocursos.ga"
+		<!-- <p>O site pode ser visto em <a class="link" href="https://www.webpontocursos.ga"
 			target="_blank">www.webpontocursos.ga</a>.
-		</p>
+		</p> -->
 
 		<br>
 

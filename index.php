@@ -91,7 +91,25 @@ $app->get(
     '/restaurants',
     function () {
 
-       require_once("view/trab_restaurants.php");
+       require_once("view/trab_rests.php");
+
+    }
+);
+
+$app->get (
+    '/karson',
+    function () {
+
+        require_once("view/trab_karson.php");
+
+    }
+);
+
+$app->get (
+    '/orquidario',
+    function () {
+
+        require_once("view/trab_orquidario.php");
 
     }
 );

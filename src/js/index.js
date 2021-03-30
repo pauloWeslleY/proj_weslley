@@ -5,13 +5,15 @@ let openNav = document.getElementById("threeline-icon");
 openNav.onclick = () => {
 
 	const navbar = document.getElementById("navigation");
+	const iconClose = document.getElementById("threeline-icon");
+	const iconOpen = document.getElementById("threeline-icon");
 
 	if (navbar.className === "navigation") {
 		navbar.className += " menujs";
-		document.getElementById("threeline-icon").innerHTML = "&Cross;";
+		iconClose.innerHTML = "&Cross;";
 	} else {
 		navbar.className = "navigation";
-		document.getElementById("threeline-icon").innerHTML = "&#9776;";
+		iconOpen.innerHTML = "&#9776;";
 	}
 
 }

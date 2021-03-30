@@ -27,9 +27,9 @@
 
 		<img class="foto-trabalhos" src="src/img/trabalhos/trab_midia4.jpg" alt="Site Midia">
 
-		<p>O site pode ser acessado em <a class="link" href="http://www.weslleymarket.ga/?i=1"
-				target="_blank">www.weslleymarket.ga</a>.
-		</p>
+		<!-- <p>O site pode ser acessado em <a class="link" href="http://www.weslleymarket.ga/?i=1"
+			target="_blank">www.weslleymarket.ga</a>.
+		</p> -->
 
 		<br>
 

@@ -76,6 +76,28 @@
 			</a>
 		</div>
 
+		<div style="background-image: url('src/img/proj_karson.jpg')" class="miniatura">
+			<a href="karson">
+			<div class="blackbox">
+				<div class="blackbox-text">
+					<h1>Serralheria - Karson</h1>
+					<h2>Node.js / Angular</h2>
+				</div>
+			</div>
+			</a>
+		</div>
+
+		<div style="background-image: url('src/img/proj_orquidario.jpg')" class="miniatura">
+			<a href="orquidario">
+			<div class="blackbox">
+				<div class="blackbox-text">
+					<h1>Orquidário</h1>
+					<h2>Node.js / Angular</h2>
+				</div>
+			</div>
+			</a>
+		</div>
+
 		<br>
 
 		<a class="back-link" href="index.php">&larr; Voltar ao início<a>
