@@ -81,7 +81,7 @@
 			<div class="blackbox">
 				<div class="blackbox-text">
 					<h1>Serralheria - Karson</h1>
-					<h2>Node.js / Angular</h2>
+					<h2>Materialize / Sass</h2>
 				</div>
 			</div>
 			</a>
@@ -92,7 +92,7 @@
 			<div class="blackbox">
 				<div class="blackbox-text">
 					<h1>Orquidário</h1>
-					<h2>Node.js / Angular</h2>
+					<h2>Material Design</h2>
 				</div>
 			</div>
 			</a>
