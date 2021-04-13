@@ -1,15 +1,19 @@
 "use strict";
-let openNav = document.getElementById("threeline-icon");
+// ! NOTE: Menujs Scripts
+//
+let openNav = document.querySelector("#threeline-icon");
 openNav.onclick = () => {
-    const navbar = document.getElementById("navigation");
-    let iconClose = document.getElementById("threeline-icon");
-    let iconOpen = document.getElementById("threeline-icon");
-    if (navbar.className === "navigation") {
-        navbar.className += " menujs";
-        iconClose.innerHTML = "&Cross;";
-    }
-    else {
-        navbar.className = "navigation";
-        iconOpen.innerHTML = "&#9776;";
+    const navbar = document.querySelector("#navigation");
+    let iconClose = document.querySelector("#threeline-icon");
+    let iconOpen = document.querySelector("#threeline-icon");
+    switch (navbar.className === "navigation") {
+        case navbar:
+            navbar.className += " menujs";
+            iconClose.innerHTML = "&Cross;";
+            break;
+        case navbar:
+            navbar.className = "navigation";
+            iconOpen.innerHTML = "&#9776;";
+            break;
     }
 };

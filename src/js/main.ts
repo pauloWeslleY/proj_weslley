@@ -1,19 +1,25 @@
-// NOTE: Menujs Scripts
+// ! NOTE: Menujs Scripts
 //
-let openNav: any = document.getElementById("threeline-icon")
+let openNav: any = document.querySelector("#threeline-icon")
 
 openNav.onclick = () => {
 
-   const navbar: any = document.getElementById("navigation")
-   let iconClose: any = document.getElementById("threeline-icon")
-   let iconOpen: any = document.getElementById("threeline-icon")
+   const navbar: any = document.querySelector("#navigation")
+   let iconClose: any = document.querySelector("#threeline-icon")
+   let iconOpen: any = document.querySelector("#threeline-icon")
 
-	if (navbar.className === "navigation") {
-		navbar.className += " menujs"
-		iconClose.innerHTML = "&Cross;"
-	} else {
-		navbar.className = "navigation"
-		iconOpen.innerHTML = "&#9776;"
+	switch (navbar.className === "navigation") {
+
+		case navbar:
+			navbar.className += " menujs"
+			iconClose.innerHTML = "&Cross;"
+			break;
+
+		case navbar:
+			navbar.className = "navigation"
+			iconOpen.innerHTML = "&#9776;"
+			break;
+
 	}
 
 }
