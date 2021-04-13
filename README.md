@@ -1,3 +1,3 @@
 # proj_weslley
 
-My project developed with HTML5 and CSS3 / SASS and JavaScripts/PHP
+My project developed with HTML5, CSS3/SASS, JavaScripts, PHP
