@@ -5,7 +5,7 @@
 		<ul class="caminho">
 			<li><a href="index.php">Home</a></li>
 			<li>></li>
-			<li><a href="trabalhos">Trabalhos</a></li>
+			<li><a href="trabalho">Trabalhos</a></li>
 			<li>></li>
 			<li>Projeto Curso - Orlando City</li>
 		</ul>
