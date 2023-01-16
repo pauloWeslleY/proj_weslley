@@ -1,59 +1,71 @@
-@import "_library.scss";
+@use 'app';
 
 /* NOTE: Main Style *******************/
-.main {
-   padding: 40px 180px 80px 100px;
+.hero__content {
+	padding: 4rem 18rem 8rem 10rem;
+	color: app.$white;
 
-   animation-name: conteudo;
-   animation-duration: 2s;
+	animation: content__effect 2s;
+
+	h1 {
+		@extend %u-no-bold;
+		margin-block: 2rem;
+	}
+
+	h2 {
+		@extend %u-uppercase;
+		@extend %u-no-bold;
+
+		font-size: 1.7rem;
+		margin-top: 4rem;
+		margin-bottom: 1.5rem;
+	}
+
+	h3 {
+		@extend %u-uppercase;
+		color: app.$blue-100;
+		font-size: 1.2rem;
+		margin-bottom: 1.2rem;
+	}
+
+	p {
+		@extend %u-text-align-justify;
+
+		font-size: 1.8rem;
+		font-weight: 100;
+		line-height: 2.4rem;
+		margin-bottom: 1rem;
+	}
+
+	hr {
+		margin-block: 1rem;
+	}
+
+	.hero__pagination {
+		list-style: none;
+		padding-left: 0;
+		color: app.$gray-100;
+
+		li {
+			@extend %u-display-inline-block;
+
+			a {
+				color: app.$gray-100;
+			}
+		}
+	}
 }
 
-.cv-pic {
-   float: left;
-   width: 280px;
-   margin-right: 20px;
-   margin-bottom: 20px;
-}
+@keyframes content__effect {
+	0% {
+		opacity: 0;
+		transform: translate(-20px, 0px);
+	}
 
-.main h1 {
-   @extend %u-no-bold;
-   color: $cor4-branco;
-}
-
-.main h2 {
-   @extend %u-uppercase;
-   @extend %u-no-bold;
-   color: $cor4-branco;
-   font-size: 16px;
-   margin-top: 40px;
-}
-
-.main h3 {
-   @extend %u-uppercase;
-   color: $cor1-azul;
-   font-size: 12px;
-}
-
-.main p {
-   @extend %u-text-align-justify;
-   color: $cor4-branco;
-   font-size: 18px;
-   font-weight: 100;
-   line-height: 24px;
-}
-
-.caminho {
-   list-style: none;
-   padding-left: 0;
-   color: $cor3-cinza;
-}
-
-.caminho li {
-   @extend %u-display-inline-block;
-}
-
-.caminho a {
-   color: $cor3-cinza;
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
 }
 
 /* NOTE: End Main Style *******************/

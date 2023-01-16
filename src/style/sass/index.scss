@@ -1,20 +1,36 @@
 // NOTE: importa library
-@import "_library.scss";
-@import "_navigation.scss";
-@import "_cap.scss";
-@import "_main.scss";
-@import "_portfolio.scss";
-@import "_social.scss";
-@import "_effect.scss";
-@import "_media-queries.scss";
+@import 'library';
+@import 'navigation';
+@import 'header';
+@import 'main';
+@import 'portfolio';
+@import 'social';
+@import 'media-queries';
+@import 'about';
 
-html,
-body {
+:root {
+	font-size: 62.5%;
+}
+
+* {
+	@extend %u-no-text-decoration;
 	@extend %u-no-padding;
 	@extend %u-no-margin;
+	box-sizing: border-box;
 }
 
 body {
 	background-color: $cor2-cinza-esc;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+
+.foto-trabalhos {
+	width: 100%;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+.button__link {
+	color: $cor1-azul;
 }

@@ -1,14 +1,14 @@
 {
-  "name": "portfolio-weslley-novo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.2"
-  }
+	"name": "portfolio-weslley-novo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch --style compressed src/style/sass:src/style/css"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^6.2.1"
+	}
 }

@@ -1,48 +1,62 @@
-@import "_library.scss";
+@use 'app';
 
 /* TODO: Navigation  Style **************/
 .navigation {
-   background-color: $cor2-cinza-esc;
-   color: $cor4-branco;
-   height: 50px;
+	background-color: app.$gray-300;
+	color: app.$white;
+	height: 5rem;
 
-   animation-name: navegacao;
-   animation-duration: 4s;
+	animation: nav_effect 4s;
+
+	ul {
+		@extend %u-text-align-right;
+		list-style: none;
+		margin-top: 0;
+		padding-left: 0;
+		height: 5rem;
+
+		li {
+			@extend %u-display-inline-block;
+			padding-inline: 3rem;
+			line-height: 5rem;
+			font-size: 1.8rem;
+			font-weight: 300;
+
+			a {
+				@extend %u-no-text-decoration;
+				color: app.$white;
+
+				transition: all 0.2s ease-in;
+
+				&:hover {
+					font-weight: 400;
+					color: app.$blue-100;
+				}
+			}
+
+			&.threeline-icon {
+				@extend %u-display-none;
+
+				&:hover {
+					color: app.$blue-100;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }
 
-.navigation ul {
-   @extend %u-text-align-right;
-   list-style: none;
-   margin-top: 0;
-   padding-left: 0;
-   height: 50px;
-}
+@keyframes nav_effect {
+	0% {
+		opacity: 0;
+	}
 
-.navigation li {
-   @extend %u-display-inline-block;
-   padding-left: 30px;
-   padding-right: 30px;
-   line-height: 50px;
-   font-size: 18px;
-   font-weight: 100;
-}
+	50% {
+		opacity: 0;
+	}
 
-.navigation a {
-   @extend %u-no-text-decoration;
-   color: $cor4-branco;
-}
-
-.navigation a:hover {
-   color: $cor1-azul;
-}
-
-.navigation li.threeline-icon {
-   @extend %u-display-none;
-}
-
-.navigation li.threeline-icon:hover {
-   color: $cor1-azul;
-   cursor: pointer;
+	100% {
+		opacity: 1;
+	}
 }
 /* End Style Navigation */
-

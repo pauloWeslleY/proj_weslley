@@ -1,0 +1,82 @@
+@use 'app';
+
+/* TODO: Cap Style  **********/
+.header__profile {
+	@extend %u-display-flex;
+	@extend %u-flex-total-centered;
+	flex-wrap: wrap;
+	height: 94vh;
+
+	color: app.$white;
+	padding-bottom: 2rem;
+
+	div {
+		@extend %u-display-flex;
+		gap: 0.2rem;
+	}
+
+	.header__profile_picture {
+		@extend %u-flex-total-centered;
+		@extend %u-text-align-center;
+
+		flex: 1 1 40%;
+		animation: profile__picture_effect 2s;
+
+		img {
+			width: 32rem;
+			border-radius: 32rem;
+		}
+	}
+
+	.header__profile_title {
+		justify-content: center;
+		flex-direction: column;
+		flex: 1 1 60%;
+
+		animation: profile__title_effect 2s;
+
+		h1 {
+			@extend %u-uppercase;
+			font-weight: 200;
+			font-size: 5.8rem;
+
+			line-height: 5.4rem;
+
+			span {
+				@extend %u-display-block;
+				font-weight: 400;
+				color: app.$blue-200;
+			}
+		}
+
+		h2 {
+			font-size: 1.8rem;
+			font-weight: 100;
+		}
+	}
+}
+
+@keyframes profile__picture_effect {
+	0% {
+		opacity: 0;
+		transform: translate(0px, 20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes profile__title_effect {
+	0% {
+		opacity: 0;
+		transform: translate(0px, -20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+/* TODO: End Cap Style  **********/

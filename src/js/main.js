@@ -1,6 +1,6 @@
 "use strict";
 // ! NOTE: Menujs Scripts
-//
+
 let openNav = document.querySelector("#threeline-icon");
 openNav.onclick = () => {
     const navbar = document.querySelector("#navigation");

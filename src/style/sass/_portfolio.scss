@@ -1,63 +1,56 @@
 /* TODO: Import *******/
-@import "_library.scss";
+@use 'app';
 
+.hero__posts_wrapper {
+	display: flex;
+	flex-wrap: wrap;
 
-// Style Portfolio
-.miniatura {
-   @extend %u-display-inline-block;
-   width: 320px;
-   height: 320px;
-   margin-right: 15px;
-   margin-bottom: 15px;
-   background-size: contain;
-   overflow: hidden;
+	//[] Style Portfolio
+	.hero__posts {
+		@extend %u-display-inline-block;
+		width: 32rem;
+		height: 32rem;
+		margin-right: 1.5rem;
+		margin-bottom: 1.5rem;
+		background-size: cover;
+		overflow: hidden;
+
+		.hero__posts_content {
+			@extend %u-display-flex;
+			@extend %u-flex-total-centered;
+
+			width: 100%;
+			height: 100%;
+			background-color: app.$black;
+			opacity: 0;
+			transition: all 1s ease-in;
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			.hero__post_title {
+				@extend %u-text-align-center;
+
+				h1 {
+					@extend %u-uppercase;
+					font-size: 1.6rem;
+					color: app.$blue-100;
+				}
+
+				h2 {
+					@extend %u-no-text-transform;
+					color: app.$white;
+
+					margin-top: 0px;
+					font-weight: 100;
+				}
+			}
+		}
+
+		a {
+			@extend %u-no-text-decoration;
+		}
+	}
 }
-
-.miniatura a {
-   @extend %u-no-text-decoration;
-}
-
-.blackbox {
-   width: 100%;
-   height: 63%;
-   background-color: $cor5-preto;
-   opacity: 0;
-   padding-top: 120px;
-   transition: 1s;
-}
-
-.blackbox:hover {
-   opacity: 0.8;
-   transition: 1s;
-}
-
-.blackbox-text {
-   @extend %u-text-align-center;
-}
-
-.blackbox-text h1 {
-   @extend %u-uppercase;
-   font-size: 16px;
-   color: $cor1-azul;
-   margin-top: 0px;
-}
-
-.blackbox-text h2 {
-   @extend %u-no-text-transform;
-   font-weight: 100;
-   margin-top: 0;
-   color: $cor4-branco;
-}
-
-.foto-trabalhos {
-   width: 100%;
-   margin-bottom: 10px;
-   margin-top: 10px;
-}
-
-.back-link {
-   color: $cor1-azul;
-   @extend %u-no-text-decoration;
-}
-
 /* End Style Portfolio */

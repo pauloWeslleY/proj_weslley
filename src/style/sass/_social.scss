@@ -1,38 +1,33 @@
-@import "_library.scss";
-
 /* TODO: Rede Sociais *****/
 .link {
-   color: $cor1-azul;
-   @extend %u-bold;
+	color: $cor1-azul;
+	@extend %u-bold;
 
-   &:active,
-   &:focus,
-   &:hover {
-      color: $cor-azul1;
-      transition: all .50s ease-in-out;
-      -moz-transition: all .50s ease-in-out;
-      -webkit-transition: all .50s ease-in-out;
-   }
+	&:active,
+	&:focus,
+	&:hover {
+		color: $cor-azul1;
+		transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-webkit-transition: all 0.5s ease-in-out;
+	}
 }
 
-.socialLinks a {
-   @extend %u-no-text-decoration;
-}
+.contact__links {
+	display: flex;
+	gap: 0.8rem;
 
-.socialInst {
-   color: $cor-vermelho;
-}
+	.socialInst {
+		color: $cor-vermelho;
+	}
 
-.socialLinkd {
-   color: $cor-azul1;
-}
+	.socialLinkd {
+		color: $cor-azul1;
+	}
 
-.socialFace {
-   color: $cor-azul2;
-}
-
-.socialGit {
-   color: $cor-cinza3;
+	.socialGit {
+		color: $cor-cinza3;
+	}
 }
 
 /* End Style Rede Sociais */
